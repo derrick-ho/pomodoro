@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<html>
+<head>
+  <title>Pomodoro Timer</title>
+   <link rel="stylesheet" type="text/css" href="pomodoro.css" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class = "title">
+      <h1>Pomodoro Timer</h1>
+   </div>
+   <div class = "time-val">
+      <div class="time-container"><h1>Session</h1>
+      </div>
+      <div class="time-container"><h1>Break</h1>
+      </div>
+      <div class="time-container">
+         <div class="time-button" id='study-down'>&laquo;</div>
+         <div class="time-form">
+         <form id= "study-time" class="timer-disp">
+            <input type="text" id= "study-input" value="25" readonly onsubmit="return false;"></input>
+         </form>
+         </div>
+         <div class="time-button" id='study-up'>&raquo;</div>
+      </div>
+      
+      <div class="time-container">
+         <div class="time-button" id='break-down'>&laquo;</div>
+         <div class="time-form">
+         <form id= "break-time" class="timer-disp">
+            <input type="text" id= "break-input" value="5" readonly onsubmit="return false;"></input>
+         </form>
+         </div>
+         <div class="time-button" id='break-up'>&raquo;</div>
+      </div>
+   </div>
+   <div class="pomodoro">
+      <form id= "timer">
+         <input type="text" id= "timer-input" value="25:00" readonly onsubmit="return false;"></input>
+      </form>
+      
+      <div class="clock-functions">
+         <div class="clock-input" id='restart'>
+            <i class="fa fa-refresh"></i>
+         </div>
+
+         <div class="clock-input" id='pause'>
+            <i class="fa fa-play"></i>/<i class="fa fa-pause"></i>
+         </div>
+
+         <div class="clock-input" id='stop'>
+            <i class="fa fa-stop"></i>
+         </div>
+      </div>
+
+   </div>
+   <script type="text/javascript" src="pomodoro.js"></script>
+</body>
+</html>
